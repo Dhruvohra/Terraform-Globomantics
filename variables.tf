@@ -1,3 +1,4 @@
+/* 
 variable "aws_access_key" {
     type = string
     description = "Access key to login into AWS Account"
@@ -8,7 +9,8 @@ variable "aws_secret_key" {
     type = string
     description = "Secret key to login into AWS Account"
     sensitive = true
-}
+} 
+*/
 
 variable "aws_region" {
     type = list(string)
@@ -19,7 +21,7 @@ variable "aws_region" {
 variable "cidr_block" {
     type = list(string)
     description = "Aws cidr block Values List"
-    default = ["0.0.0.0/0", "10.0.0.0/16", "10.0.0.0/24"]
+    default = ["0.0.0.0/0", "10.0.0.0/16", "10.0.0.0/24", "10.0.1.0/24"]
 }
 
 variable "ingress_port" {
